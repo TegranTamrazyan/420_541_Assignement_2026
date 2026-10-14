@@ -15,7 +15,7 @@ public class LevelEndTrigger : MonoBehaviour
         // Save the score BEFORE loading: the GameManager is about
         // to be destroyed together with the rest of SampleScene
         GameManager.Instance.SaveFinalScore();
-
+        GameManager.Instance.ResetHealth(3); // Because I'm so nice I'll let them have their health back
         SceneManager.LoadScene(NextSceneName);
     }
 }
